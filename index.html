@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Prpgrammer Experience Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Programmer Experience Survey</h1>
+  <p id="description">Thank you for filling out this survey to help us better understand the needs of our users.</p>
+  <hr>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">What is your name? <input id="name" type="text" placeholder="John Doe" required/></label>
+      <label for="email" id="email-label">What is your email? <input id="email" type="email" placeholder="johndoe@gmail.com" required/></label>
+      <label for="age" id="number-label">What is your age? <input id="number" type="number" min="13" max="120" placeholder="22" required/></label>
+      <label for="dropdown">What is your experience level? <select id="dropdown">
+  <option value="">Select one</option>
+  <option value="1">I have never coded before</option>
+  <option value="2">I have been coding less than 6 months</option>
+  <option value="3">I have been coding between 6 and 12 months</option>
+  <option value="4">I have been coding between 1 and 2 years</option>
+  <option value="5">I have been coding for more than 2 years</option>
+</select>
+<p class="margin">What is your employment type?</p> <label for="related-career" class="left-align"><input id="related-engineer" type="radio" name="career-type" class="inline" value="related-career"/> I am employed in the software development industry</label>
+      <label for="unrelated-career" class="left-align"><input id="unrelated-career" type="radio" name="career-type" class="inline" value="unrelated-career"/> I am not employed in the software development industry.</label>
+    </fieldset>
+    <fieldset>
+      <label for="comments" class="comments">Do you have any comments?
+<textarea id="comments" name="comments" rows="3" cols="30" placeholder="Comments"></textarea></label>
+    </fieldset>
+    <hr>
+    <fieldset>
+      <label for="terms-and-conditions" class="left-align">
+ <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="accepts-terms"/> I have read and accept the terms and conditions</label>
+      <label for="marketing-emails" class="left-align">
+<input id="marketing-emails" type="checkbox"  name="marketing-emails" class="inline" value="accepts-marketing" /> I would like to opt in to receive marketing emails.
+</fieldset>
+
+    <input id="submit" type="submit" value="Submit"/>
+  </form>
+</body>
+
+</html>
